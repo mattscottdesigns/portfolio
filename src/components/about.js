@@ -4,7 +4,10 @@ import picture from "./../images/picture.png"
 class About extends React.Component {
   render() {
     return (
-      <div className="bg-about bg-cover min-h-screen p-10 flex items-center text-white text-center">
+      <div
+        id="about"
+        className="bg-about bg-cover min-h-screen p-10 flex items-center text-white text-center"
+      >
         <div className="mx-auto">
           <img className="img-picture mx-auto mb-6" src={picture} />
           <div className="opacity-75">

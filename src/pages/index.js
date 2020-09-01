@@ -1,11 +1,11 @@
 import React from "react"
-import Layout from "./../components/layout"
-import Navigation from "./../components/navigation"
-import About from "./../components/about"
-import Skills from "./../components/skills"
-import Projects from "./../components/projects"
-import Resume from "./../components/resume"
-import Contact from "./../components/contact"
+import Layout from "../components/Layout"
+import Navigation from "../components/Navigation"
+import About from "../components/About"
+import Skills from "../components/Skills"
+import Projects from "../components/Projects"
+import Resume from "../components/Resume"
+import Contact from "../components/Contact"
 import "./../css/main.css"
 
 const IndexPage = () => (
