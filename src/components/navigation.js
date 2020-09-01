@@ -23,8 +23,6 @@ class Navigation extends React.Component {
   }
 
   render() {
-    const activeClassName = "bg-white bg-opacity-75 text-dark"
-
     return (
       <div
         className="fixed top-0 right-0 left-0 text-white text-sm transition duration-500 ease-in-out z-10"
@@ -37,40 +35,35 @@ class Navigation extends React.Component {
           <div className="hidden md:flex">
             <Scrollspy
               items={["about", "skills", "projects", "resume", "contact"]}
-              currentClassName="border border-light rounded"
+              currentClassName="bg-light text-dark"
             >
               <Link
                 to={"/#about"}
-                activeClassName={activeClassName}
-                className="uppercase px-4 py-1"
+                className="rounded uppercase mx-2 px-4 py-1 transition duration-500 ease-in-out"
               >
                 About
               </Link>
               <Link
                 to={"/#skills"}
-                activeClassName={activeClassName}
-                className="uppercase px-4 py-1"
+                className="rounded uppercase mx-2 px-4 py-1 transition duration-500 ease-in-out"
               >
                 Skills
               </Link>
               <Link
                 to={"#projects"}
-                activeClassName={activeClassName}
-                className="uppercase px-4 py-1"
+                className="rounded uppercase mx-2 px-4 py-1 transition duration-500 ease-in-out"
               >
                 Projects
               </Link>
               <Link
                 to={"#resume"}
-                activeClassName={activeClassName}
-                className="uppercase px-4 py-1"
+                className="rounded uppercase mx-2 px-4 py-1 transition duration-500 ease-in-out"
               >
                 Resume
               </Link>
               <Link
                 to={"#contact"}
-                activeClassName={activeClassName}
-                className="uppercase px-4 py-1"
+                className="rounded uppercase mx-2 px-4 py-1 transition duration-500 ease-in-out"
               >
                 Contact
               </Link>
