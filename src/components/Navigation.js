@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import logo from "./../images/logo.svg"
 
@@ -38,36 +38,37 @@ class Navigation extends React.Component {
               currentClassName="bg-light text-dark"
               offset={-100}
             >
-              <Link
-                to={"/#about"}
-                className="px-4 py-1 mx-2 uppercase transition duration-500 ease-in-out rounded"
-              >
+              <AnchorLink href={"#about"} className="navigation-link">
                 About
-              </Link>
-              <Link
-                to={"/#skills"}
-                className="px-4 py-1 mx-2 uppercase transition duration-500 ease-in-out rounded"
+              </AnchorLink>
+              <AnchorLink
+                href={"#skills"}
+                offset={60}
+                className="navigation-link"
               >
                 Skills
-              </Link>
-              <Link
-                to={"#projects"}
-                className="px-4 py-1 mx-2 uppercase transition duration-500 ease-in-out rounded"
+              </AnchorLink>
+              <AnchorLink
+                href={"#projects"}
+                offset={60}
+                className="navigation-link"
               >
                 Projects
-              </Link>
-              <Link
-                to={"#resume"}
-                className="px-4 py-1 mx-2 uppercase transition duration-500 ease-in-out rounded"
+              </AnchorLink>
+              <AnchorLink
+                href={"#resume"}
+                offset={60}
+                className="navigation-link"
               >
                 Resume
-              </Link>
-              <Link
-                to={"#contact"}
-                className="px-4 py-1 mx-2 uppercase transition duration-500 ease-in-out rounded"
+              </AnchorLink>
+              <AnchorLink
+                href={"#contact"}
+                offset={60}
+                className="navigation-link"
               >
                 Contact
-              </Link>
+              </AnchorLink>
             </Scrollspy>
           </div>
           <div className="flex md:hidden">menu</div>
