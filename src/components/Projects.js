@@ -63,7 +63,7 @@ class Projects extends React.Component {
       <div id="projects" className="bg-dark">
         <Heading text="Projects" />
         <div className="mx-10 text-center">
-          <div className="flex max-w-md p-1 mx-auto mt-16 mb-10 font-light text-center text-white bg-black bg-opacity-25 rounded-lg just">
+          <div className="flex max-w-md p-1 mx-auto mt-16 mb-10 font-light text-center text-white bg-black bg-opacity-25 rounded-lg">
             <div
               className="w-1/3 px-2 py-1 m-2 transition duration-200 ease-in-out rounded cursor-pointer"
               onClick={() => this.setFilter("all")}
@@ -87,12 +87,12 @@ class Projects extends React.Component {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap px-10 pb-16">
+        <div className="flex flex-wrap px-10 pb-16 mx-auto">
           {filteredProjects.map(project => {
             return (
               <div
                 key={project.id}
-                className="px-4 my-4 lg:w-1/4 md:w-1/3 sm:w-1/2"
+                className="w-full px-4 my-4 lg:w-1/4 md:w-1/3 sm:w-1/2"
                 onClick={() => this.setActiveProject(project)}
               >
                 <Project {...project} />

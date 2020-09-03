@@ -15,9 +15,11 @@ class Navigation extends React.Component {
   handleScroll = e => {
     if (window.pageYOffset > 0) {
       this.navigation.classList.add("bg-dark")
+      this.navigation.classList.add("bg-opacity-75")
       this.navigation.classList.add("shadow-lg")
     } else {
       this.navigation.classList.remove("bg-dark")
+      this.navigation.classList.remove("bg-opacity-75")
       this.navigation.classList.remove("shadow-lg")
     }
   }
@@ -43,28 +45,28 @@ class Navigation extends React.Component {
               </AnchorLink>
               <AnchorLink
                 href={"#skills"}
-                offset={60}
+                offset={65}
                 className="navigation-link"
               >
                 Skills
               </AnchorLink>
               <AnchorLink
                 href={"#projects"}
-                offset={60}
+                offset={65}
                 className="navigation-link"
               >
                 Projects
               </AnchorLink>
               <AnchorLink
                 href={"#resume"}
-                offset={60}
+                offset={65}
                 className="navigation-link"
               >
                 Resume
               </AnchorLink>
               <AnchorLink
                 href={"#contact"}
-                offset={60}
+                offset={65}
                 className="navigation-link"
               >
                 Contact

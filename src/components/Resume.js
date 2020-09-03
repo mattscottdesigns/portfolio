@@ -14,9 +14,13 @@ class Resume extends React.Component {
         <Heading text="Resume" />
         <div className="px-10 py-16">
           <VerticalTimeline>
-            {resume.map(item => {
+            {resume.map((item, index) => {
               return (
-                <VerticalTimelineElement date={item.date} className="text-dark">
+                <VerticalTimelineElement
+                  key={index}
+                  date={item.date}
+                  className="text-dark"
+                >
                   <div className="text-xl font-bold">{item.title}</div>
                   <div className="mb-5 font-thin text-primary">
                     {item.company}
