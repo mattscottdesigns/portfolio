@@ -4,6 +4,10 @@
 
 @import "tailwindcss/utilities";
 
+.navigation-link {
+  @apply px-4 py-2 mx-2 uppercase transition duration-500 ease-in-out rounded;
+}
+
 .bg-about {
   background-image: url("./../images/background.png");
 }
@@ -19,4 +23,21 @@
 
 .rodal-dialog {
   overflow: auto;
+}
+
+.vertical-timeline-element-content {
+  @apply bg-light shadow-none border-t-4 border-primary;
+}
+
+.vertical-timeline-element-content-arrow {
+  @apply border-transparent border-8 border-r-primary;
+}
+
+.vertical-timeline::before {
+  width: 1px;
+  @apply bg-medium;
+}
+
+.vertical-timeline-element-icon {
+  @apply hidden;
 }
