@@ -1,6 +1,5 @@
 import React from "react"
 import Rodal from "rodal"
-import ProjectCarousel from "./ProjectCarousel"
 import "rodal/lib/rodal.css"
 
 class ProjectModal extends React.Component {
