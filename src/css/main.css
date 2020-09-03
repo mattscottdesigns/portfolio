@@ -16,3 +16,7 @@
   max-width: 250px;
   width: 100%;
 }
+
+.rodal-dialog {
+  overflow: auto;
+}

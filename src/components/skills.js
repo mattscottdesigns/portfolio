@@ -7,19 +7,19 @@ class Skills extends React.Component {
     return (
       <div id="skills">
         <Heading text="Skills" id="skills" />
-        <div className="p-10 max-w-6xl mx-auto">
-          <div className="text-md font-light text-dark mb-10">
+        <div className="max-w-6xl px-10 py-16 mx-auto">
+          <div className="mb-10 font-light text-md text-dark">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Duis aute irure dolor in
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est{" "}
+            culpa qui officia deserunt mollit anim id est
           </div>
 
           <div className="mb-10">
-            <div className="font-light text-2xl mb-5">Development</div>
+            <div className="mb-5 text-2xl font-light">Development</div>
 
             <PercentageBar
               label="JavaScript / ES6"
@@ -59,7 +59,7 @@ class Skills extends React.Component {
           </div>
 
           <div>
-            <div className="font-light text-2xl mb-5">Design</div>
+            <div className="mb-5 text-2xl font-light">Design</div>
             <PercentageBar
               label="HTML / CSS"
               percent="95"

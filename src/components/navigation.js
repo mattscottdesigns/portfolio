@@ -25,10 +25,10 @@ class Navigation extends React.Component {
   render() {
     return (
       <div
-        className="fixed top-0 right-0 left-0 text-white text-sm transition duration-500 ease-in-out z-10"
+        className="fixed top-0 left-0 right-0 z-10 text-sm text-white transition duration-500 ease-in-out"
         ref={ref => (this.navigation = ref)}
       >
-        <div className="flex items-center p-4">
+        <div className="flex items-center p-2">
           <div className="mr-auto">
             <img className="img-logo" src={logo} />
           </div>
@@ -36,34 +36,35 @@ class Navigation extends React.Component {
             <Scrollspy
               items={["about", "skills", "projects", "resume", "contact"]}
               currentClassName="bg-light text-dark"
+              offset={-100}
             >
               <Link
                 to={"/#about"}
-                className="rounded uppercase mx-2 px-4 py-1 transition duration-500 ease-in-out"
+                className="px-4 py-1 mx-2 uppercase transition duration-500 ease-in-out rounded"
               >
                 About
               </Link>
               <Link
                 to={"/#skills"}
-                className="rounded uppercase mx-2 px-4 py-1 transition duration-500 ease-in-out"
+                className="px-4 py-1 mx-2 uppercase transition duration-500 ease-in-out rounded"
               >
                 Skills
               </Link>
               <Link
                 to={"#projects"}
-                className="rounded uppercase mx-2 px-4 py-1 transition duration-500 ease-in-out"
+                className="px-4 py-1 mx-2 uppercase transition duration-500 ease-in-out rounded"
               >
                 Projects
               </Link>
               <Link
                 to={"#resume"}
-                className="rounded uppercase mx-2 px-4 py-1 transition duration-500 ease-in-out"
+                className="px-4 py-1 mx-2 uppercase transition duration-500 ease-in-out rounded"
               >
                 Resume
               </Link>
               <Link
                 to={"#contact"}
-                className="rounded uppercase mx-2 px-4 py-1 transition duration-500 ease-in-out"
+                className="px-4 py-1 mx-2 uppercase transition duration-500 ease-in-out rounded"
               >
                 Contact
               </Link>
