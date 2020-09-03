@@ -139,7 +139,7 @@ export const projects = [
     tags: ["HTML", "CSS", "JavaScript"],
     thumbnail: images.cdsDensityManagement.thumbnail,
     images: images.cdsDensityManagement.projectImages,
-    type: ["development", "design"],
+    type: ["development"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
   },
@@ -172,16 +172,18 @@ export const projects = [
     tags: ["Illustrator"],
     thumbnail: images.harmony.thumbnail,
     images: images.harmony.projectImages,
+    type: ["design"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
   },
   {
     id: "powerbiHeatmap",
-    company: "Power BI",
-    display: "Exhibitor Booth Heatmap",
+    company: "Convention Data Services",
+    display: "Power BI Exhibitor Booth Heatmap",
     tags: ["JavaScript", "ES6", "HTML", "CSS"],
     thumbnail: images.powerbiHeatmap.thumbnail,
     images: images.powerbiHeatmap.projectImages,
+    type: ["development"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
   },
@@ -192,6 +194,7 @@ export const projects = [
     tags: ["JavaScript", "ES6", "HTML", "CSS", "Illustrator", "Photoshop"],
     thumbnail: images.cdsDigitalBackpack.thumbnail,
     images: images.cdsDigitalBackpack.projectImages,
+    type: ["design", "development"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
   },
@@ -202,6 +205,7 @@ export const projects = [
     tags: ["XD"],
     thumbnail: images.cdsPrimed.thumbnail,
     images: images.cdsPrimed.projectImages,
+    type: ["design"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
   },
@@ -212,6 +216,7 @@ export const projects = [
     tags: ["XD", "Photoshop", "HTML", "CSS"],
     thumbnail: images.brahminLandingPage.thumbnail,
     images: images.brahminLandingPage.projectImages,
+    type: ["design"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
   },
@@ -222,6 +227,7 @@ export const projects = [
     tags: [".NET", "HTML", "CSS", "jQuery"],
     thumbnail: images.cdsHub.thumbnail,
     images: images.cdsHub.projectImages,
+    type: ["design", "development"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
   },

@@ -4,7 +4,7 @@ class Projects extends React.Component {
   render() {
     return (
       <img
-        className="mx-auto transition duration-300 ease-in-out transform hover:scale-110"
+        className="mx-auto transition duration-300 ease-in-out transform rounded shadow-xl cursor-pointer hover:scale-110"
         src={this.props.thumbnail}
       />
     )

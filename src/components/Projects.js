@@ -6,7 +6,17 @@ import ProjectModal from "./ProjectModal"
 
 class Projects extends React.Component {
   state = {
+    projects: projects,
     activeProject: undefined,
+    filter: "all",
+  }
+
+  componentDidMount() {
+    this.setActiveFilter()
+  }
+
+  componentDidUpdate() {
+    this.setActiveFilter()
   }
 
   setActiveProject(project) {
@@ -21,6 +31,19 @@ class Projects extends React.Component {
     })
   }
 
+  setActiveFilter() {
+    this.all.classList.remove("bg-primary")
+    this.development.classList.remove("bg-primary")
+    this.design.classList.remove("bg-primary")
+    this[this.state.filter].classList.add("bg-primary")
+  }
+
+  setFilter(newFilter) {
+    this.setState({
+      filter: newFilter,
+    })
+  }
+
   getProjectIndex() {}
 
   getPreviousProject() {}
@@ -28,11 +51,44 @@ class Projects extends React.Component {
   getNextProject() {}
 
   render() {
+    const filteredProjects = projects.filter(project => {
+      if (this.state.filter == "all") {
+        return project
+      }
+
+      return project.type.indexOf(this.state.filter) > -1
+    })
+
     return (
       <div id="projects" className="bg-dark">
         <Heading text="Projects" />
-        <div className="flex flex-wrap justify-center px-10 py-16">
-          {projects.map(project => {
+        <div className="mx-10 text-center">
+          <div className="flex max-w-md p-1 mx-auto mt-16 mb-10 font-light text-center text-white bg-black bg-opacity-25 rounded-lg just">
+            <div
+              className="w-1/3 px-2 py-1 m-2 transition duration-200 ease-in-out rounded cursor-pointer"
+              onClick={() => this.setFilter("all")}
+              ref={ref => (this.all = ref)}
+            >
+              All
+            </div>
+            <div
+              className="w-1/3 px-2 py-1 m-2 transition duration-200 ease-in-out bg-transparent rounded cursor-pointer"
+              onClick={() => this.setFilter("development")}
+              ref={ref => (this.development = ref)}
+            >
+              Development
+            </div>
+            <div
+              className="w-1/3 px-2 py-1 m-2 transition duration-200 ease-in-out bg-transparent rounded cursor-pointer"
+              onClick={() => this.setFilter("design")}
+              ref={ref => (this.design = ref)}
+            >
+              Design
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-wrap px-10 pb-16">
+          {filteredProjects.map(project => {
             return (
               <div
                 key={project.id}
@@ -47,7 +103,7 @@ class Projects extends React.Component {
         {this.state.activeProject && (
           <ProjectModal
             project={this.state.activeProject}
-            height={95}
+            height={85}
             width={85}
             measure={"%"}
             visible={this.state.activeProject ? true : false}
