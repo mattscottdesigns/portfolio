@@ -5,8 +5,8 @@ class PercentageBar extends React.Component {
     const { props } = this
 
     return (
-      <div className="flex bg-light mb-2">
-        <div className="bg-dark text-light py-1 px-2 w-32 text-sm text-center">
+      <div className="flex mb-2 bg-light">
+        <div className="w-32 px-2 py-1 text-sm text-center bg-dark text-light">
           {props.label}
         </div>
         <div className="flex-grow">
@@ -17,7 +17,7 @@ class PercentageBar extends React.Component {
             }}
           ></div>
         </div>
-        <div className="pl-4 py-1 text-sm text-medium bg-white">
+        <div className="py-1 pl-4 text-sm bg-white text-medium">
           {props.percent}%
         </div>
       </div>
