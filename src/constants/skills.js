@@ -38,6 +38,7 @@ export const design = [
     text: "Photoshop",
     percent: "90",
   },
+
   {
     text: "XD",
     percent: "85",

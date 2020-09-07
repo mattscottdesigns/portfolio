@@ -8,10 +8,6 @@
   @apply px-4 py-2 mx-2 uppercase transition duration-500 ease-in-out rounded;
 }
 
-.bg-about {
-  background-image: url("./../images/background.png");
-}
-
 .img-logo {
   max-height: 50px;
 }
@@ -35,9 +31,17 @@
 
 .vertical-timeline::before {
   width: 1px;
-  @apply bg-medium;
+  @apply bg-dark opacity-50;
 }
 
 .vertical-timeline-element-icon {
   @apply hidden;
+}
+
+.form-field {
+  @apply block w-full px-4 py-3 leading-tight bg-white border-2 rounded appearance-none text-dark outline-none;
+}
+
+.form-label {
+  @apply block mb-2 text-sm  tracking-wide uppercase;
 }

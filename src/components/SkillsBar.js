@@ -6,7 +6,7 @@ class PercentageBar extends React.Component {
 
     return (
       <div className="flex mb-2">
-        <div className="w-32 px-2 py-1 text-sm text-center rounded-tl rounded-bl bg-dark text-light">
+        <div className="w-32 px-2 py-2 text-xs text-center rounded-tl rounded-bl md:w-48 md:text-sm bg-dark text-light">
           {props.label}
         </div>
         <div className="flex-grow rounded-tr rounded-br bg-light">
@@ -19,7 +19,7 @@ class PercentageBar extends React.Component {
             }}
           ></div>
         </div>
-        <div className="py-1 pl-4 text-sm bg-white text-medium">
+        <div className="py-2 pl-4 text-sm bg-white text-medium">
           {props.percent}%
         </div>
       </div>

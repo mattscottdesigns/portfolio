@@ -11,7 +11,7 @@ class ProjectModal extends React.Component {
           <div className="mb-5 text-sm text-primary">
             {this.props.project.company}
           </div>
-          <div className="mb-3 font-light text-md text-dark">
+          <div className="mb-5 font-light text-md text-dark">
             {this.props.project.description}
           </div>
 
