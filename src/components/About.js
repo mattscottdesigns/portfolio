@@ -6,18 +6,18 @@ class About extends React.Component {
     return (
       <div
         id="about"
-        className="bg-about bg-cover min-h-screen p-10 flex items-center text-white text-center"
+        className="flex items-center min-h-screen p-10 text-center text-white bg-cover bg-about bg-dark"
       >
         <div className="mx-auto">
-          <img className="img-picture mx-auto mb-6" src={picture} />
+          <img className="mx-auto mb-6 img-picture" src={picture} />
           <div className="opacity-75">
             <div className="text-2xl font-bold tracking-wide">
               Matthew Scott
             </div>
-            <div className="font-thin mb-6">UI/UX Developer</div>
-            <div className="font-thin text-2xl max-w-sm">
+            <div className="mb-6 font-thin">UI/UX Developer</div>
+            <div className="max-w-sm text-2xl font-thin">
               My name is{" "}
-              <span className="text-primary font-bold">Matt Scott</span> and I
+              <span className="font-bold text-primary">Matt Scott</span> and I
               create minimal and user friendly designs.
             </div>
           </div>

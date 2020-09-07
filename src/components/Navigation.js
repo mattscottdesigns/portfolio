@@ -2,8 +2,17 @@ import React from "react"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import logo from "./../images/logo.svg"
+import SlidingPane from "react-sliding-pane"
+import "react-sliding-pane/dist/react-sliding-pane.css"
+import navigation from "./../constants/navigation"
 
 class Navigation extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      isPaneOpen: false,
+    }
+  }
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll)
   }
@@ -15,11 +24,11 @@ class Navigation extends React.Component {
   handleScroll = e => {
     if (window.pageYOffset > 0) {
       this.navigation.classList.add("bg-dark")
-      this.navigation.classList.add("bg-opacity-75")
+      this.navigation.classList.add("bg-opacity-90")
       this.navigation.classList.add("shadow-lg")
     } else {
       this.navigation.classList.remove("bg-dark")
-      this.navigation.classList.remove("bg-opacity-75")
+      this.navigation.classList.remove("bg-opacity-90")
       this.navigation.classList.remove("shadow-lg")
     }
   }
@@ -34,47 +43,57 @@ class Navigation extends React.Component {
           <div className="mr-auto">
             <img className="img-logo" src={logo} />
           </div>
-          <div className="hidden md:flex">
+          <div className="flex">
             <Scrollspy
-              items={["about", "skills", "projects", "resume", "contact"]}
+              items={navigation}
               currentClassName="bg-light text-dark"
-              offset={-100}
+              offset={-150}
             >
-              <AnchorLink href={"#about"} className="navigation-link">
-                About
-              </AnchorLink>
-              <AnchorLink
-                href={"#skills"}
-                offset={65}
-                className="navigation-link"
+              {navigation.map(link => {
+                return (
+                  <AnchorLink
+                    href={"#" + link}
+                    offset={65}
+                    className="hidden navigation-link md:inline-block"
+                  >
+                    {link}
+                  </AnchorLink>
+                )
+              })}
+
+              <div
+                onClick={() => this.setState({ isPaneOpen: true })}
+                className="navigation-link md:hidden"
               >
-                Skills
-              </AnchorLink>
-              <AnchorLink
-                href={"#projects"}
-                offset={65}
-                className="navigation-link"
-              >
-                Projects
-              </AnchorLink>
-              <AnchorLink
-                href={"#resume"}
-                offset={65}
-                className="navigation-link"
-              >
-                Resume
-              </AnchorLink>
-              <AnchorLink
-                href={"#contact"}
-                offset={65}
-                className="navigation-link"
-              >
-                Contact
-              </AnchorLink>
+                Menu
+              </div>
             </Scrollspy>
           </div>
-          <div className="flex md:hidden">menu</div>
         </div>
+        <SlidingPane
+          className="max-w-sm duration-200"
+          overlayClassName="z-30"
+          hideHeader={true}
+          isOpen={this.state.isPaneOpen}
+          onRequestClose={() => {
+            this.setState({ isPaneOpen: false })
+          }}
+        >
+          {navigation.map(link => {
+            return (
+              <AnchorLink
+                href={"#" + link}
+                offset={65}
+                className="block navigation-link"
+                onClick={() => {
+                  this.setState({ isPaneOpen: false })
+                }}
+              >
+                {link}
+              </AnchorLink>
+            )
+          })}
+        </SlidingPane>
       </div>
     )
   }

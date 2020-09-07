@@ -12,7 +12,7 @@ class Resume extends React.Component {
     return (
       <div id="resume">
         <Heading text="Resume" />
-        <div className="px-10 py-16">
+        <div className="py-16 pr-5 mx-auto md:pr-10 md:pl-10">
           <VerticalTimeline>
             {resume.map((item, index) => {
               return (

@@ -1,6 +1,6 @@
 import React from "react"
 import Heading from "./Heading"
-import PercentageBar from "./PercentageBar"
+import SkillsBar from "./SkillsBar"
 import skills from "./../constants/skills"
 
 class Skills extends React.Component {
@@ -10,13 +10,14 @@ class Skills extends React.Component {
         <Heading text="Skills" />
         <div className="max-w-5xl px-10 py-16 mx-auto">
           <div className="font-light text-md text-dark">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est
+            Throughout my life I have always been drawn to making things look
+            good. At first it started off with just designing some logos and
+            websites for friends. Naturally I got curious about the development
+            side of things and starting learning technologies such as HTML/CSS,
+            JavaScript, and server side languages like PHP to create interactive
+            websites and prototypes. With that skillset I discovered my passion
+            for creating minimal user interfaces while giving the user the best
+            experience possible.
           </div>
 
           <div className="mb-10">
@@ -29,7 +30,7 @@ class Skills extends React.Component {
                     </div>
                     {skill.items.map((item, index) => {
                       return (
-                        <PercentageBar
+                        <SkillsBar
                           key={index}
                           label={item.text}
                           percent={item.percent}

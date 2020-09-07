@@ -14,6 +14,12 @@ module.exports = {
         medium: "#939C99",
         light: "#F2F3EF",
       },
+      backgroundImage: theme => ({
+        about: "url('../images/background.jpg')",
+      }),
+      backgroundOpacity: {
+        90: "0.9",
+      },
     },
   },
   variants: {},

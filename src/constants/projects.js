@@ -108,7 +108,7 @@ export const projects = [
     images: images.massageLoft.projectImages,
     type: ["development", "design"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
+      "Website and logo for a local massage business to display information topics like qualifications and services available. They requested something with earthy colors that gave off a zen feeling while still remaining professional.",
   },
   {
     id: "brahminDigitalCatalog",
@@ -119,7 +119,7 @@ export const projects = [
     images: images.brahminDigitalCatalog.projectImages,
     type: ["design"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
+      "Brahmin's online catalogs were originally in a flip page format to mimic an physical catalog. However this was not ideal for a digital solution due to UX/accessability issues and responsiveness on smaller screens. In an attempt to fix this we decided to condense the catalog into a single scrollable page. First we needed to break the products into easily digestable sections which meant putting products with complementary patterns together. Then we added shopping carousels with related products that link to a product page for more information and purchasing.",
   },
   {
     id: "brahminCustomerService",
@@ -130,7 +130,7 @@ export const projects = [
     images: images.brahminCustomerService.projectImages,
     type: ["design"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
+      "The previous customer service pages didn't fit the rest of the website and needed more structure. Users had a tendency to get lost and have a hard time finding the pages they were looking for. The solution was to create a side navigation template that would be used by all the customer service related pages. We also created a collapsable component to better orgranize the large amount of information on the pages.",
   },
   {
     id: "cdsDensityManagement",
@@ -141,7 +141,7 @@ export const projects = [
     images: images.cdsDensityManagement.projectImages,
     type: ["development"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
+      "The event management industry was hit hard by COVID-19. This forced us to create new opportunites and help our clients manage events while also being safe. One solution was to use access control when allowing attendee's into the event. This involves scanning each attendee's badge when they enter or exit a hall in the convention center. From this data we created a real time dashboard to monitor the capacity of each hall within the convention center. This allows event management to control the flow of their event safely.",
   },
   {
     id: "cdsShowPro",
@@ -152,7 +152,7 @@ export const projects = [
     images: images.cdsShowPro.projectImages,
     type: ["development", "design"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
+      "Show Pro is a self service event management platform. Normally clients would request a website and then it would be built to their specifications and business rules. If they needed any updates they had to put in a request and wait for it to be completed. This changed all that because they could now manage their own events. Users now had the power to create an event, manage attendee/exhibitor registration, setup items for purchase, and design their pages to match the event branding.",
   },
   {
     id: "cdsShowProCart",
@@ -163,7 +163,7 @@ export const projects = [
     images: images.cdsShowProCart.projectImages,
     type: ["design"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
+      "Events the potential to have complex registration pages depending on the business rules decided by event management. Just a few scenarios are: hiding/showing items based on demographics, items dependent on selecting another item, or representing an item status like required or a reserved time limit. This concept tries to solve this by using clear call to action for the add/remove buttons, collapsable dependent items, and icons/tooltips to keep the UI as clean as possible. ",
   },
   {
     id: "harmony",
@@ -174,29 +174,36 @@ export const projects = [
     images: images.harmony.projectImages,
     type: ["design"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
+      "Harmony's purpose was to monitor the internet connectivity of a suite of company applications. If an application registered with Harmony lost connection to the internet, the appropriate people would be notified via text and email. The goal was to create a logo which represented the harmony between elements. I chose to represent that with overlapping letters and the intertwining water droplet and leaf.",
   },
   {
     id: "powerbiHeatmap",
     company: "Convention Data Services",
     display: "Power BI Exhibitor Booth Heatmap",
-    tags: ["JavaScript", "ES6", "HTML", "CSS"],
+    tags: ["JavaScript / ES6", "HTML", "CSS"],
     thumbnail: images.powerbiHeatmap.thumbnail,
     images: images.powerbiHeatmap.projectImages,
     type: ["development"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
+      "We use Power BI as the back bone for our analytics for out clients. In this case I created a custom visual that uses data from an integration with Map Your Show and A2Z that contains booth coordinates and then used exhibitor lead scan count from the event database as the main metric. Then you can drill down by clicking on each booth to get a list of the exhibitors at the booth and scan counts.",
   },
   {
     id: "cdsDigitalBackpack",
     company: "Convention Data Services",
     display: "Digital Backpack Mobile App",
-    tags: ["JavaScript", "ES6", "HTML", "CSS", "Illustrator", "Photoshop"],
+    tags: [
+      "React Native",
+      "JavaScript / ES6",
+      "HTML",
+      "CSS",
+      "Illustrator",
+      "Photoshop",
+    ],
     thumbnail: images.cdsDigitalBackpack.thumbnail,
     images: images.cdsDigitalBackpack.projectImages,
     type: ["design", "development"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
+      "Generating leads are important for sustaining a business in any industry and exhibitors at events are no different. Exhibitors are at events to showcase their products, however not all attendee's want to interact with someone at the booth. Digital Backpack is a mobile app that exhibitors install on their devices and place at their booths. Digital Backpack can be setup with product images and descriptions for attendee's to look through without interacting with booth staff. If the attendee wants more information they can scan their badge and it will be sent to their registered email and a lead sent to the exhibitor.",
   },
   {
     id: "cdsPrimed",
@@ -207,7 +214,7 @@ export const projects = [
     images: images.cdsPrimed.projectImages,
     type: ["design"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
+      "Our client had just finish redesigning their company website and wanted to refresh the look of the registration pages we created for them. This concept was an attempt to match that new branding which involved matching fonts, clean up spacing between elements, and a new step component to show where they are in the registration process.",
   },
   {
     id: "brahminLandingPage",
@@ -218,7 +225,7 @@ export const projects = [
     images: images.brahminLandingPage.projectImages,
     type: ["design"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
+      "At least once a month Brahmin would update their landing page to showcase their new or popular products. In this case it was products with their Topsail material which is a smooth leather. The goal was to create something simple and elegant to match the look and feel of Topsail leather.",
   },
   {
     id: "cdsHub",
@@ -229,7 +236,7 @@ export const projects = [
     images: images.cdsHub.projectImages,
     type: ["design", "development"],
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.",
+      "CDS has a lot of products all with their own use cases. In order to help with our user experience we created a central hub that they log into using a single set of credentials and can easily switch between available applications. When they select a different application the header moves with you so you can keep moving between applications or go back to the CDS Hub.",
   },
 ]
 
