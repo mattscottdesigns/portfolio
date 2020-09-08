@@ -6,10 +6,13 @@ class About extends React.Component {
     return (
       <div
         id="about"
-        className="flex items-center min-h-screen p-10 text-center text-white bg-cover bg-about bg-dark"
+        className="flex items-center min-h-screen p-10 text-center text-white transition-all duration-300 ease-in-out bg-center bg-cover bg-about bg-dark"
       >
         <div className="mx-auto">
-          <img className="mx-auto mb-6 img-picture" src={picture} />
+          <img
+            className="mx-auto mb-6 rounded-full shadow-xl img-picture"
+            src={picture}
+          />
           <div className="opacity-75">
             <div className="text-2xl font-bold tracking-wide">
               Matthew Scott
