@@ -67,7 +67,7 @@
 .project-previous,
 .project-next {
   top: 50%;
-  @apply py-4 px-1 text-white bg-primary fixed text-2xl;
+  @apply py-4 text-white bg-primary fixed text-2xl m-1 rounded-sm;
 }
 
 .project-previous {
