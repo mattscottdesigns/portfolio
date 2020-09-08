@@ -45,3 +45,35 @@
 .form-label {
   @apply block mb-2 text-sm  tracking-wide uppercase;
 }
+
+.rodal-dialog {
+  border-radius: 0;
+}
+
+.rodal-close {
+  position: absolute;
+  cursor: pointer;
+  top: 32px;
+  right: 32px;
+  width: 32px;
+  height: 32px;
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date,
+.vertical-timeline-element-content p {
+  @apply text-base;
+}
+
+.project-previous,
+.project-next {
+  top: 50%;
+  @apply py-4 px-1 text-white bg-primary fixed text-2xl;
+}
+
+.project-previous {
+  left: 0;
+}
+
+.project-next {
+  right: 0;
+}
