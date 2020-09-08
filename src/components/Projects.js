@@ -3,6 +3,9 @@ import { projects } from "./../constants/projects"
 import Heading from "./Heading"
 import Project from "./Project"
 import ProjectModal from "./ProjectModal"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
 
 class Projects extends React.Component {
   state = {
@@ -44,13 +47,35 @@ class Projects extends React.Component {
     })
   }
 
-  getProjectIndex() {}
+  getProjectIndex(project) {
+    if (project) {
+      return projects.findIndex(i => i.id === project.id || "")
+    }
+  }
 
-  getPreviousProject() {}
+  getPreviousProject(next) {
+    let currentIndex = this.getProjectIndex(this.state.activeProject)
+    if (currentIndex == 0) {
+      currentIndex = projects.length - 1
+    } else {
+      currentIndex = currentIndex - 1
+    }
+    this.setActiveProject(projects[currentIndex])
+  }
 
-  getNextProject() {}
+  getNextProject() {
+    let currentIndex = this.getProjectIndex(this.state.activeProject)
+    if (currentIndex == projects.length - 1) {
+      currentIndex = 0
+    } else {
+      currentIndex = currentIndex + 1
+    }
+    this.setActiveProject(projects[currentIndex])
+  }
 
   render() {
+    console.log(this.getProjectIndex(this.state.activeProject))
+
     const filteredProjects = projects.filter(project => {
       if (this.state.filter == "all") {
         return project
@@ -103,12 +128,14 @@ class Projects extends React.Component {
         {this.state.activeProject && (
           <ProjectModal
             project={this.state.activeProject}
-            height={85}
-            width={85}
+            height={100}
+            width={100}
             measure={"%"}
             visible={this.state.activeProject ? true : false}
             onClose={this.hideActiveProject.bind(this)}
             setActiveProject={this.setActiveProject.bind(this)}
+            onNext={this.getNextProject.bind(this)}
+            onPrevious={this.getPreviousProject.bind(this)}
           />
         )}
       </div>

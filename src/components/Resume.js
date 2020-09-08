@@ -19,12 +19,11 @@ class Resume extends React.Component {
                 <VerticalTimelineElement
                   key={index}
                   date={item.date}
+                  dateClassName="text-xl"
                   className="text-dark"
                 >
                   <div className="text-xl font-bold">{item.title}</div>
-                  <div className="mb-5 font-thin text-primary">
-                    {item.company}
-                  </div>
+                  <div className="mb-5 text-primary">{item.company}</div>
                   <div>{item.description}</div>
                 </VerticalTimelineElement>
               )

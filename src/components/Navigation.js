@@ -5,6 +5,7 @@ import logo from "./../images/logo.svg"
 import SlidingPane from "react-sliding-pane"
 import "react-sliding-pane/dist/react-sliding-pane.css"
 import navigation from "./../constants/navigation"
+import { FaBars } from "react-icons/fa"
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -49,12 +50,13 @@ class Navigation extends React.Component {
               currentClassName="bg-light text-dark"
               offset={-150}
             >
-              {navigation.map(link => {
+              {navigation.map((link, index) => {
                 return (
                   <AnchorLink
+                    key={index}
                     href={"#" + link}
                     offset={65}
-                    className="hidden navigation-link md:inline-block"
+                    className="hidden navigation-link sm:inline-block"
                   >
                     {link}
                   </AnchorLink>
@@ -63,15 +65,15 @@ class Navigation extends React.Component {
 
               <div
                 onClick={() => this.setState({ isPaneOpen: true })}
-                className="navigation-link md:hidden"
+                className="navigation-link sm:hidden"
               >
-                Menu
+                <FaBars className="text-3xl" />
               </div>
             </Scrollspy>
           </div>
         </div>
         <SlidingPane
-          className="max-w-sm duration-200"
+          className="max-w-xs text-white duration-200 bg-primary"
           overlayClassName="z-30"
           hideHeader={true}
           isOpen={this.state.isPaneOpen}
@@ -79,20 +81,27 @@ class Navigation extends React.Component {
             this.setState({ isPaneOpen: false })
           }}
         >
-          {navigation.map(link => {
-            return (
-              <AnchorLink
-                href={"#" + link}
-                offset={65}
-                className="block navigation-link"
-                onClick={() => {
-                  this.setState({ isPaneOpen: false })
-                }}
-              >
-                {link}
-              </AnchorLink>
-            )
-          })}
+          <Scrollspy
+            items={navigation}
+            currentClassName="bg-light text-dark"
+            offset={-150}
+          >
+            {navigation.map((link, index) => {
+              return (
+                <AnchorLink
+                  key={index}
+                  href={"#" + link}
+                  offset={65}
+                  className="block navigation-link"
+                  onClick={() => {
+                    this.setState({ isPaneOpen: false })
+                  }}
+                >
+                  {link}
+                </AnchorLink>
+              )
+            })}
+          </Scrollspy>
         </SlidingPane>
       </div>
     )
