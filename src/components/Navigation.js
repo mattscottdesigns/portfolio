@@ -24,12 +24,12 @@ class Navigation extends React.Component {
 
   handleScroll = e => {
     if (window.pageYOffset > 0) {
-      this.navigation.classList.add("bg-dark")
-      this.navigation.classList.add("bg-opacity-90")
+      this.navigation.classList.add("bg-black")
+      this.navigation.classList.add("bg-opacity-75")
       this.navigation.classList.add("shadow-lg")
     } else {
-      this.navigation.classList.remove("bg-dark")
-      this.navigation.classList.remove("bg-opacity-90")
+      this.navigation.classList.remove("bg-black")
+      this.navigation.classList.remove("bg-opacity-75")
       this.navigation.classList.remove("shadow-lg")
     }
   }
@@ -73,7 +73,7 @@ class Navigation extends React.Component {
           </div>
         </div>
         <SlidingPane
-          className="max-w-xs text-white duration-200 bg-primary"
+          className="max-w-xs text-white duration-200 bg-black bg-opacity-90"
           overlayClassName="z-30"
           hideHeader={true}
           isOpen={this.state.isPaneOpen}
