@@ -12,7 +12,7 @@ class Contact extends React.Component {
         <Heading text="Contact" />
         <div className="bg-dark">
           <div className="flex justify-center p-3 text-4xl bg-black bg-opacity-25 text-light">
-            <a href="https://github.com/mscott087">
+            <a href="https://github.com/mattscottdesigns">
               <FaGithubSquare className="mx-3" />
             </a>
             <a href="https://www.linkedin.com/in/matthew-taylor-scott/">
