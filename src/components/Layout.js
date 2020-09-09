@@ -10,7 +10,6 @@ class Layout extends React.Component {
 
   componentDidMount() {
     setTimeout(() => {
-      window.scrollTo(0, 0)
       this.setState({
         loaded: true,
       })
