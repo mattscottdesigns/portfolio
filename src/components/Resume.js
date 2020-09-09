@@ -1,6 +1,7 @@
 import React from "react"
 import Heading from "./Heading"
 import resume from "./../constants/resume"
+import resumePDF from "./../images/resume-mattscott.pdf"
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -12,7 +13,16 @@ class Resume extends React.Component {
     return (
       <div id="resume">
         <Heading text="Resume" />
-        <div className="py-16 pr-5 mx-auto md:pr-10 md:pl-10">
+        <div className="my-16 text-center">
+          <a
+            className="inline-block px-4 py-2 text-white rounded bg-primary"
+            href={resumePDF}
+            download
+          >
+            View Full Resume
+          </a>
+        </div>
+        <div className="pr-5 mx-auto my-16 md:pr-10 md:pl-10">
           <VerticalTimeline>
             {resume.map((item, index) => {
               return (
