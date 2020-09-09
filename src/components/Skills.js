@@ -21,10 +21,13 @@ class Skills extends React.Component {
           </div>
 
           <div className="mb-10">
-            <div>
+            <div class="flex flex-wrap -mx-5">
               {skills.map((skill, index) => {
                 return (
-                  <div key={index}>
+                  <div
+                    className="w-full px-5 max-w-screen-xs md:w-1/3"
+                    key={index}
+                  >
                     <div className="mt-10 mb-5 text-2xl font-light">
                       {skill.title}
                     </div>

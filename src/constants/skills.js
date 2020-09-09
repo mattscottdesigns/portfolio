@@ -7,10 +7,7 @@ export const development = [
     text: "React",
     percent: "85",
   },
-  {
-    text: "Classic ASP",
-    percent: "80",
-  },
+
   {
     text: "React Native",
     percent: "70",
@@ -24,7 +21,7 @@ export const development = [
     percent: "70",
   },
   {
-    text: "React",
+    text: ".NET / C#",
     percent: "50",
   },
 ]
@@ -35,6 +32,30 @@ export const design = [
     percent: "95",
   },
   {
+    text: "UI Design",
+    percent: "85",
+  },
+  {
+    text: "UX Design",
+    percent: "85",
+  },
+
+  {
+    text: "Information Architecture",
+    percent: "80",
+  },
+  {
+    text: "Wireframes / Prototypes",
+    percent: "80",
+  },
+  {
+    text: "Research",
+    percent: "75",
+  },
+]
+
+export const software = [
+  {
     text: "Photoshop",
     percent: "90",
   },
@@ -44,21 +65,39 @@ export const design = [
     percent: "85",
   },
   {
+    text: "Visual Studio",
+    percent: "85",
+  },
+  {
+    text: "Git / Sourcetree",
+    percent: "85",
+  },
+  {
     text: "Illustrator",
+    percent: "80",
+  },
+  {
+    text: "Jira",
     percent: "80",
   },
 ]
 
 export const skills = [
   {
-    title: "Development",
+    title: "Design",
     backgroundClass: "bg-primary",
-    items: development,
+    items: design,
   },
   {
-    title: "Design",
+    title: "Development",
     backgroundClass: "bg-secondary",
-    items: design,
+    items: development,
+  },
+
+  {
+    title: "Software",
+    backgroundClass: "bg-dark",
+    items: software,
   },
 ]
 

@@ -5,22 +5,17 @@ class PercentageBar extends React.Component {
     const { props } = this
 
     return (
-      <div className="flex mb-2">
-        <div className="w-32 px-2 py-2 text-xs text-center rounded-tl rounded-bl md:w-48 md:text-sm bg-dark text-light">
-          {props.label}
-        </div>
-        <div className="flex-grow rounded-tr rounded-br bg-light">
-          <div
-            className={
-              "bg-primary h-full rounded-br rounded-tr " + props.backgroundClass
-            }
-            style={{
-              width: props.percent + "%",
-            }}
-          ></div>
-        </div>
-        <div className="py-2 pl-4 text-sm bg-white text-medium">
-          {props.percent}%
+      <div>
+        <div className="pb-1 text-xs opacity-75">{props.label}</div>
+        <div className="flex mb-3">
+          <div className="flex-grow rounded-sm bg-light">
+            <div
+              className={"py-2 rounded-sm " + props.backgroundClass}
+              style={{
+                width: props.percent + "%",
+              }}
+            ></div>
+          </div>
         </div>
       </div>
     )
