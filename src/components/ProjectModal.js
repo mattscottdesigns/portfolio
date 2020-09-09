@@ -7,7 +7,7 @@ class ProjectModal extends React.Component {
   render() {
     return (
       <Rodal duration={500} {...this.props}>
-        <div className="p-5">
+        <div className="px-8 py-4">
           <div className="project-previous" onClick={this.props.onPrevious}>
             <BiChevronLeft />
           </div>
@@ -16,20 +16,20 @@ class ProjectModal extends React.Component {
           </div>
           <div className="pr-10 leading-8">
             <div className="text-2xl">{this.props.project.display}</div>
-            <div className="mb-5 text-primary">
+            <div className="mb-3 text-primary">
               {this.props.project.company}
             </div>
           </div>
-          <div className="mb-5 font-light text-md text-dark">
+
+          <div className="mb-3 font-light text-md text-dark">
             {this.props.project.description}
           </div>
-
           <div>
             {this.props.project.tags.map(tag => {
               return (
                 <span
                   key={tag}
-                  className="inline-block px-4 py-1 m-1 text-sm rounded bg-light"
+                  className="inline-block px-4 py-1 m-2 ml-0 text-sm rounded bg-light"
                 >
                   {tag}
                 </span>
@@ -39,7 +39,7 @@ class ProjectModal extends React.Component {
           <div className="flex flex-wrap justify-center">
             {this.props.project.images.map((image, index) => {
               return (
-                <div key={index} className="px-1 py-10">
+                <div key={index} className="py-10">
                   <img className="border rounded-lg shadow-xl" src={image} />
                 </div>
               )
