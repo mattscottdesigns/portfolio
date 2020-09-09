@@ -24,13 +24,9 @@ class Navigation extends React.Component {
 
   handleScroll = e => {
     if (window.pageYOffset > 0) {
-      this.navigation.classList.add("bg-black")
-      this.navigation.classList.add("bg-opacity-75")
-      this.navigation.classList.add("shadow-lg")
+      this.navigation.classList.add("navigation-link-active")
     } else {
-      this.navigation.classList.remove("bg-black")
-      this.navigation.classList.remove("bg-opacity-75")
-      this.navigation.classList.remove("shadow-lg")
+      this.navigation.classList.remove("navigation-link-active")
     }
   }
 
