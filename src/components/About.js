@@ -14,10 +14,10 @@ class About extends React.Component {
             src={picture}
           />
           <div className="opacity-75">
-            <div className="text-2xl font-bold tracking-wide">
+            <div className="text-4xl font-bold tracking-wide">
               Matthew Scott
             </div>
-            <div className="mb-6 font-thin">UI/UX Developer</div>
+            <div className="mb-6 text-xl font-thin">UI/UX Developer</div>
             <div className="max-w-sm text-2xl font-thin">
               My name is{" "}
               <span className="font-bold text-primary">Matt Scott</span> and I
