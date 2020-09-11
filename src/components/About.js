@@ -11,6 +11,7 @@ const About = () => {
         <img
           className="mx-auto mb-6 rounded-full shadow-xl img-picture"
           src={picture}
+          alt="Matthew Scott"
         />
         <div className="opacity-75">
           <div className="text-4xl font-bold tracking-wide">Matthew Scott</div>

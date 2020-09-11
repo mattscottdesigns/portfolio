@@ -1,16 +1,15 @@
 import React from "react"
 
 const SkillsBar = props => {
-  console.log(props)
   return (
-    <div>
-      <div className="pb-1 text-xs font-light tracking-wide text-medium">
+    <div className="mb-4">
+      <div className="pb-1 text-sm font-light tracking-wide opacity-90">
         {props.label}
       </div>
-      <div className="flex mb-3">
-        <div className="flex-grow rounded-sm bg-light">
+      <div className="flex">
+        <div className="flex-grow rounded bg-light">
           <div
-            className={"py-2 rounded-sm " + props.backgroundClassName}
+            className={"h-5 rounded " + props.backgroundClassName}
             style={{
               width: props.percent + "%",
             }}

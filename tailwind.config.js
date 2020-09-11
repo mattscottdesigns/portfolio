@@ -1,6 +1,9 @@
 const plugin = require("tailwindcss/plugin")
 
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+  },
   purge: [],
   theme: {
     fontFamily: {
@@ -22,6 +25,9 @@ module.exports = {
       },
       opacity: {
         90: "0.9",
+      },
+      transitionProperty: {
+        height: "height",
       },
     },
   },

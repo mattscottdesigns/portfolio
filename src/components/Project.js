@@ -5,6 +5,7 @@ const Project = props => {
     <img
       className="mx-auto transition duration-300 ease-in-out transform rounded shadow-xl cursor-pointer hover:scale-110"
       src={props.thumbnail}
+      alt={props.display}
     />
   )
 }

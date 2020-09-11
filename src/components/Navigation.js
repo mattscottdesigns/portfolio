@@ -40,7 +40,7 @@ class Navigation extends React.Component {
       >
         <div className="flex items-center p-2">
           <div className="mr-auto">
-            <img className="img-logo" src={logo} />
+            <img className="img-logo" src={logo} alt="Matt Scott Designs" />
           </div>
           <div className="flex">
             <Scrollspy
@@ -71,7 +71,7 @@ class Navigation extends React.Component {
           </div>
         </div>
         <SlidingPane
-          className="max-w-xs text-white duration-200 bg-dark bg-opacity-90"
+          className="max-w-xs text-white duration-200 bg-dark "
           overlayClassName="z-30"
           hideHeader={true}
           isOpen={isPaneOpen}
@@ -90,7 +90,7 @@ class Navigation extends React.Component {
                   key={index}
                   href={"#" + link}
                   offset={65}
-                  className="block navigation-link"
+                  className="block my-2 navigation-link"
                   onClick={() => {
                     this.setState({ isPaneOpen: false })
                   }}

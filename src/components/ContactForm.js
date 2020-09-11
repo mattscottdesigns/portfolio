@@ -1,6 +1,5 @@
 import React from "React"
 import SimpleReactValidator from "simple-react-validator"
-import { object } from "prop-types"
 
 class ContactForm extends React.Component {
   constructor(props) {
@@ -80,6 +79,7 @@ class ContactForm extends React.Component {
       <div className="px-8 py-16">
         {!this.state.completed && (
           <form
+            noValidate
             className="w-full max-w-3xl mx-auto"
             ref={ref => (this.form = ref)}
           >

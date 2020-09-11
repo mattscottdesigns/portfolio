@@ -2,7 +2,6 @@ import React from "react"
 import Heading from "./Heading"
 import ContactForm from "./ContactForm"
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa"
-import { MdEmail } from "react-icons/md"
 import { FaEnvelopeSquare } from "react-icons/fa"
 
 const Contact = () => {

@@ -3,9 +3,6 @@ import { projects } from "./../constants/projects"
 import Heading from "./Heading"
 import Project from "./Project"
 import ProjectModal from "./ProjectModal"
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
 
 class Projects extends React.Component {
   state = {
@@ -26,12 +23,16 @@ class Projects extends React.Component {
     this.setState({
       activeProject: project,
     })
+    const body = document.querySelector("body")
+    body.classList.add("overflow-hidden")
   }
 
   hideActiveProject() {
     this.setState({
       activeProject: undefined,
     })
+    const body = document.querySelector("body")
+    body.classList.remove("overflow-hidden")
   }
 
   setActiveFilter() {
@@ -53,40 +54,16 @@ class Projects extends React.Component {
     }
   }
 
-  getPreviousProject() {
-    const { activeProject } = this.state
-    let currentIndex = this.getProjectIndex(activeProject)
-
-    if (currentIndex == 0) {
-      currentIndex = projects.length - 1
-    } else {
-      currentIndex = currentIndex - 1
-    }
-
-    this.setActiveProject(projects[currentIndex])
-  }
-
-  getNextProject() {
-    const { activeProject } = this.state
-    let currentIndex = this.getProjectIndex(activeProject)
-
-    if (currentIndex == projects.length - 1) {
-      currentIndex = 0
-    } else {
-      currentIndex = currentIndex + 1
-    }
-
-    this.setActiveProject(projects[currentIndex])
-  }
-
   render() {
     const filteredProjects = projects.filter(project => {
-      if (this.state.filter == "all") {
+      if (this.state.filter === "all") {
         return project
       }
 
       return project.type.indexOf(this.state.filter) > -1
     })
+
+    const activeProjectIndex = this.getProjectIndex(this.state.activeProject)
 
     return (
       <div id="projects" className="bg-dark">
@@ -131,9 +108,9 @@ class Projects extends React.Component {
         </div>
         {this.state.activeProject && (
           <ProjectModal
-            project={this.state.activeProject}
+            projects={filteredProjects}
             onClose={this.hideActiveProject.bind(this)}
-            getProjectIndex={this.getProjectIndex.bind(this)}
+            activeProjectIndex={activeProjectIndex}
           />
         )}
       </div>
