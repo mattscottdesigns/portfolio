@@ -31,6 +31,8 @@ class Navigation extends React.Component {
   }
 
   render() {
+    const { isPaneOpen } = this.state
+
     return (
       <div
         className="fixed top-0 left-0 right-0 z-10 text-sm text-white transition duration-500 ease-in-out"
@@ -69,10 +71,10 @@ class Navigation extends React.Component {
           </div>
         </div>
         <SlidingPane
-          className="max-w-xs text-white duration-200 bg-black bg-opacity-90"
+          className="max-w-xs text-white duration-200 bg-dark bg-opacity-90"
           overlayClassName="z-30"
           hideHeader={true}
-          isOpen={this.state.isPaneOpen}
+          isOpen={isPaneOpen}
           onRequestClose={() => {
             this.setState({ isPaneOpen: false })
           }}

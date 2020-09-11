@@ -1,52 +1,86 @@
 import React from "react"
-import Rodal from "rodal"
-import "rodal/lib/rodal.css"
-import { BiChevronLeft, BiChevronRight } from "react-icons/bi"
+import { projects } from "./../constants/projects"
+import Slider from "react-slick"
+import { GrClose } from "react-icons/gr"
 
 class ProjectModal extends React.Component {
-  render() {
-    return (
-      <Rodal duration={500} {...this.props}>
-        <div className="px-8 py-4">
-          <div className="project-previous" onClick={this.props.onPrevious}>
-            <BiChevronLeft />
-          </div>
-          <div className="project-next" onClick={this.props.onNext}>
-            <BiChevronRight />
-          </div>
-          <div className="pr-10 leading-8">
-            <div className="text-2xl">{this.props.project.display}</div>
-            <div className="mb-3 text-primary">
-              {this.props.project.company}
-            </div>
-          </div>
+  componentDidMount() {
+    this.slider.slickGoTo(this.props.getProjectIndex(this.props.project))
+  }
 
-          <div className="mb-3 font-light text-md text-dark">
-            {this.props.project.description}
-          </div>
-          <div>
-            {this.props.project.tags.map(tag => {
-              return (
-                <span
-                  key={tag}
-                  className="inline-block px-4 py-1 m-2 ml-0 text-sm rounded bg-light"
-                >
-                  {tag}
-                </span>
-              )
-            })}
-          </div>
-          <div className="flex flex-wrap justify-center">
-            {this.props.project.images.map((image, index) => {
-              return (
-                <div key={index} className="py-10">
-                  <img className="border rounded-lg shadow-xl" src={image} />
+  render() {
+    const settings = {
+      centerMode: true,
+      centerPadding: "100px",
+      infinite: true,
+      slidesToShow: 1,
+      speed: 500,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            centerPadding: "35px",
+          },
+        },
+      ],
+    }
+
+    return (
+      <div className="fixed top-0 bottom-0 left-0 right-0 z-30 bg-black bg-opacity-75">
+        <Slider {...settings} ref={ref => (this.slider = ref)}>
+          {projects.map(project => {
+            return (
+              <div className="h-screen py-5">
+                <div className="relative h-full p-6 overflow-auto bg-white rounded-lg">
+                  <div
+                    className="absolute top-0 right-0 p-6 text-2xl"
+                    onClick={this.props.onClose}
+                  >
+                    <GrClose />
+                  </div>
+
+                  <div className="pr-10">
+                    <div className="mb-1 text-2xl font-bold leading-8">
+                      {project.display}
+                    </div>
+                    <div className="mb-4 text-lg leading-6 text-primary">
+                      {project.company}
+                    </div>
+                  </div>
+
+                  <div className="mb-3 font-light text-md text-dark">
+                    {project.description}
+                  </div>
+                  <div>
+                    {project.tags.map(tag => {
+                      return (
+                        <span
+                          key={tag}
+                          className="inline-block px-4 py-1 mb-2 mr-2 text-sm rounded bg-light"
+                        >
+                          {tag}
+                        </span>
+                      )
+                    })}
+                  </div>
+                  <div className="flex flex-wrap justify-center">
+                    {project.images.map((image, index) => {
+                      return (
+                        <div key={index} className="py-10">
+                          <img
+                            className="border rounded-lg shadow-xl"
+                            src={image}
+                          />
+                        </div>
+                      )
+                    })}
+                  </div>
                 </div>
-              )
-            })}
-          </div>
-        </div>
-      </Rodal>
+              </div>
+            )
+          })}
+        </Slider>
+      </div>
     )
   }
 }

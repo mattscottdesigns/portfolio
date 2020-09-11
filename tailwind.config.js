@@ -20,6 +20,9 @@ module.exports = {
       backgroundOpacity: {
         90: "0.9",
       },
+      opacity: {
+        90: "0.9",
+      },
     },
   },
   variants: {},

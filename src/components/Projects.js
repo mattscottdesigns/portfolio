@@ -53,29 +53,33 @@ class Projects extends React.Component {
     }
   }
 
-  getPreviousProject(next) {
-    let currentIndex = this.getProjectIndex(this.state.activeProject)
+  getPreviousProject() {
+    const { activeProject } = this.state
+    let currentIndex = this.getProjectIndex(activeProject)
+
     if (currentIndex == 0) {
       currentIndex = projects.length - 1
     } else {
       currentIndex = currentIndex - 1
     }
+
     this.setActiveProject(projects[currentIndex])
   }
 
   getNextProject() {
-    let currentIndex = this.getProjectIndex(this.state.activeProject)
+    const { activeProject } = this.state
+    let currentIndex = this.getProjectIndex(activeProject)
+
     if (currentIndex == projects.length - 1) {
       currentIndex = 0
     } else {
       currentIndex = currentIndex + 1
     }
+
     this.setActiveProject(projects[currentIndex])
   }
 
   render() {
-    console.log(this.getProjectIndex(this.state.activeProject))
-
     const filteredProjects = projects.filter(project => {
       if (this.state.filter == "all") {
         return project
@@ -112,7 +116,7 @@ class Projects extends React.Component {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap px-10 pb-16 mx-auto">
+        <div className="flex flex-wrap px-4 pb-16 mx-auto">
           {filteredProjects.map(project => {
             return (
               <div
@@ -128,14 +132,8 @@ class Projects extends React.Component {
         {this.state.activeProject && (
           <ProjectModal
             project={this.state.activeProject}
-            height={100}
-            width={100}
-            measure={"%"}
-            visible={this.state.activeProject ? true : false}
             onClose={this.hideActiveProject.bind(this)}
-            setActiveProject={this.setActiveProject.bind(this)}
-            onNext={this.getNextProject.bind(this)}
-            onPrevious={this.getPreviousProject.bind(this)}
+            getProjectIndex={this.getProjectIndex.bind(this)}
           />
         )}
       </div>
