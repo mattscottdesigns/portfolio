@@ -43,7 +43,7 @@
 }
 
 .form-label {
-  @apply block mb-2 text-sm  tracking-wide uppercase;
+  @apply block mb-2 text-base font-light tracking-wide;
 }
 
 .rodal-dialog {
@@ -66,8 +66,15 @@
 
 .project-previous,
 .project-next {
-  top: 20%;
-  @apply p-1 rounded-full text-white bg-primary fixed text-2xl m-2 opacity-75 transition ease-in-out duration-300 cursor-pointer;
+  @apply hidden;
+}
+
+@screen md {
+  .project-previous,
+  .project-next {
+    top: 50%;
+    @apply block p-1 rounded-full text-white fixed text-3xl m-2 opacity-75 transition ease-in-out duration-300 cursor-pointer z-30;
+  }
 }
 
 .project-previous:hover,
@@ -93,4 +100,22 @@
 
 .slick-slide.slick-active {
   @apply scale-100 opacity-100;
+}
+
+.slick-arrow {
+  height: 35px;
+  width: 65px;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 30px;
 }
