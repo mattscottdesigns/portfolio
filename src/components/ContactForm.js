@@ -91,7 +91,7 @@ class ContactForm extends React.Component {
             <input type="hidden" name="_honeypot" value="" />
 
             <div className="flex flex-wrap mb-10">
-              <div className="w-full px-4 mb-4 md:w-1/2">
+              <div className="w-full px-4 mb-6 md:w-1/2">
                 <label className="form-label text-light" htmlFor="firstName">
                   First Name
                 </label>
@@ -109,7 +109,7 @@ class ContactForm extends React.Component {
                   "required|alpha"
                 )}
               </div>
-              <div className="w-full px-4 mb-4 md:w-1/2">
+              <div className="w-full px-4 mb-6 md:w-1/2">
                 <label className="form-label text-light" htmlFor="last-name">
                   Last Name
                 </label>
@@ -127,7 +127,7 @@ class ContactForm extends React.Component {
                   "required|alpha"
                 )}
               </div>
-              <div className="w-full px-4 mb-4">
+              <div className="w-full px-4 mb-6">
                 <label className="form-label text-light" htmlFor="email">
                   Email
                 </label>
@@ -145,7 +145,7 @@ class ContactForm extends React.Component {
                   "required|email"
                 )}
               </div>
-              <div className="w-full px-4 mb-4">
+              <div className="w-full px-4 mb-6">
                 <label className="form-label text-light" htmlFor="message">
                   Message
                 </label>
