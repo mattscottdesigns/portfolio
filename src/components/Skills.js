@@ -14,7 +14,7 @@ const Skills = () => {
           websites for friends. Naturally I got curious about the development
           side of things and starting learning technologies such as HTML/CSS,
           JavaScript, and server side languages like PHP to create interactive
-          websites and prototypes. With that skillset I discovered my passion
+          websites and prototypes. Having that skillset I discovered my passion
           for creating minimal user interfaces while giving the user the best
           experience possible.
         </div>
