@@ -162,7 +162,7 @@ export const projects = [
     images: images.cdsShowProCart.projectImages,
     type: ["design"],
     description:
-      "Events the potential to have complex registration pages depending on the business rules decided by event management. Just a few scenarios are: hiding/showing items based on demographics, items dependent on selecting another item, or representing an item status like required or a reserved time limit. This concept tries to solve this by using clear call to action for the add/remove buttons, collapsable dependent items, and icons/tooltips to keep the UI as clean as possible. ",
+      "Events have the potential for complex registration pages depending on the business rules decided by event management. Just a few scenarios are: hiding/showing items based on demographics, items dependent on selecting another item, or representing an item status like required or a reserved time limit. This concept tries to solve this by using clear call to action for the add/remove buttons, collapsable dependent items, and icons/tooltips to keep the UI as clean as possible. ",
   },
   {
     id: "harmony",
@@ -202,7 +202,7 @@ export const projects = [
     images: images.cdsDigitalBackpack.projectImages,
     type: ["design", "development"],
     description:
-      "Generating leads are important for sustaining a business in any industry and exhibitors at events are no different. Exhibitors are at events to showcase their products, however not all attendee's want to interact with someone at the booth. Digital Backpack is a mobile app that exhibitors install on their devices and place at their booths. Digital Backpack can be setup with product images and descriptions for attendee's to look through without interacting with booth staff. If the attendee wants more information they can scan their badge and it will be sent to their registered email and a lead sent to the exhibitor.",
+      "Digital Backpack gives exhibitors at events a way to both educate the customer on their products and also gather leads without even having to interact with the attendee. Once the app is installed on the device you can add your products and descriptions about them and then place them around the booth. When an attendee approaches the device they can swipe through the products at their own pace. If the attendee wants more information about the products, they can scan their badge and an email will be automaically sent to their registered email with the information. At the same time the lead gets sent to the exhibitor to follow up on for potential new business.",
   },
   {
     id: "cdsPrimed",
@@ -213,7 +213,7 @@ export const projects = [
     images: images.cdsPrimed.projectImages,
     type: ["design"],
     description:
-      "Our client had just finish redesigning their company website and wanted to refresh the look of the registration pages we created for them. This concept was an attempt to match that new branding which involved matching fonts, clean up spacing between elements, and a new step component to show where they are in the registration process.",
+      "A client had just finished redesigning their company website and wanted to refresh the look of the registration pages we created for them. This concept was an attempt to match that new branding which involved matching fonts, cleaning up spacing between elements, and a new step component to show where they are in the registration process.",
   },
   {
     id: "brahminLandingPage",

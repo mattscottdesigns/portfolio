@@ -7,35 +7,37 @@ import ProjectModal from "./ProjectModal"
 class Projects extends React.Component {
   state = {
     projects: projects,
-    activeProject: undefined,
+    selectedProject: undefined,
     filter: "all",
   }
 
   componentDidMount() {
-    this.setActiveFilter()
+    this.handleFilterStyles()
   }
 
   componentDidUpdate() {
-    this.setActiveFilter()
+    this.handleFilterStyles()
   }
 
-  setActiveProject(project) {
-    this.setState({
-      activeProject: project,
-    })
+  showSelectedProject(project) {
     const body = document.querySelector("body")
     body.classList.add("overflow-hidden")
+
+    this.setState({
+      selectedProject: project,
+    })
   }
 
-  hideActiveProject() {
-    this.setState({
-      activeProject: undefined,
-    })
+  hideSelectedProject() {
     const body = document.querySelector("body")
     body.classList.remove("overflow-hidden")
+
+    this.setState({
+      selectedProject: undefined,
+    })
   }
 
-  setActiveFilter() {
+  handleFilterStyles() {
     this.all.classList.remove("bg-primary")
     this.development.classList.remove("bg-primary")
     this.design.classList.remove("bg-primary")
@@ -45,25 +47,24 @@ class Projects extends React.Component {
   setFilter(newFilter) {
     this.setState({
       filter: newFilter,
+      projects: projects.filter(project => {
+        if (newFilter === "all") {
+          return project
+        }
+        return project.type.indexOf(newFilter) > -1
+      }),
     })
   }
 
   getProjectIndex(project) {
     if (project) {
-      return projects.findIndex(i => i.id === project.id || "")
+      return this.state.projects.findIndex(i => i.id === project.id || "")
     }
   }
 
   render() {
-    const filteredProjects = projects.filter(project => {
-      if (this.state.filter === "all") {
-        return project
-      }
-
-      return project.type.indexOf(this.state.filter) > -1
-    })
-
-    const activeProjectIndex = this.getProjectIndex(this.state.activeProject)
+    const { projects, selectedProject } = this.state
+    const selectedProjectIndex = this.getProjectIndex(selectedProject)
 
     return (
       <div id="projects" className="bg-dark">
@@ -71,21 +72,21 @@ class Projects extends React.Component {
         <div className="mx-4 text-center">
           <div className="flex max-w-md p-1 mx-auto mt-16 mb-10 font-light text-center text-white bg-black bg-opacity-25 rounded-lg">
             <div
-              className="w-1/3 px-2 py-1 m-2 transition duration-200 ease-in-out rounded cursor-pointer"
+              className="w-1/3 p-2 m-2 transition duration-200 ease-in-out rounded cursor-pointer"
               onClick={() => this.setFilter("all")}
               ref={ref => (this.all = ref)}
             >
               All
             </div>
             <div
-              className="w-1/3 px-2 py-1 m-2 transition duration-200 ease-in-out bg-transparent rounded cursor-pointer"
+              className="w-1/3 p-2 m-2 transition duration-200 ease-in-out bg-transparent rounded cursor-pointer"
               onClick={() => this.setFilter("development")}
               ref={ref => (this.development = ref)}
             >
               Development
             </div>
             <div
-              className="w-1/3 px-2 py-1 m-2 transition duration-200 ease-in-out bg-transparent rounded cursor-pointer"
+              className="w-1/3 p-2 m-2 transition duration-200 ease-in-out bg-transparent rounded cursor-pointer"
               onClick={() => this.setFilter("design")}
               ref={ref => (this.design = ref)}
             >
@@ -94,23 +95,23 @@ class Projects extends React.Component {
           </div>
         </div>
         <div className="flex flex-wrap px-4 pb-16 mx-auto">
-          {filteredProjects.map(project => {
+          {projects.map(project => {
             return (
               <div
                 key={project.id}
-                className="w-full px-4 my-4 lg:w-1/4 md:w-1/3 sm:w-1/2"
-                onClick={() => this.setActiveProject(project)}
+                className="w-1/2 px-4 my-4 lg:w-1/4 md:w-1/3"
+                onClick={() => this.showSelectedProject(project)}
               >
                 <Project {...project} />
               </div>
             )
           })}
         </div>
-        {this.state.activeProject && (
+        {selectedProject && (
           <ProjectModal
-            projects={filteredProjects}
-            onClose={this.hideActiveProject.bind(this)}
-            activeProjectIndex={activeProjectIndex}
+            projects={projects}
+            onClose={this.hideSelectedProject.bind(this)}
+            selectedProjectIndex={selectedProjectIndex}
           />
         )}
       </div>
