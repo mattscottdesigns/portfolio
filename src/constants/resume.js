@@ -18,7 +18,7 @@ export const resume = [
     company: "Convention Data Services",
     date: "July 2017 — July 2019",
     description:
-      "Worked with product stakeholders and users to research pain points and areas of opportunity in our products. Used wireframes and Adobe XD to put the designs together and then HTML/CSS and JavaScript to make interactive prototypes. Also collaborated with developers to ensure the vision of the design was acheived.",
+      "Worked with product stakeholders and users to research pain points and areas of opportunity in our products. Used wireframes and Adobe XD to put the designs together and then HTML/CSS and JavaScript to make interactive prototypes. Also collaborated with developers to ensure the vision of the design was achieved.",
   },
   {
     title: "Web Developer",
