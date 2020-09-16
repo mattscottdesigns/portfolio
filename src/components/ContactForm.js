@@ -167,7 +167,7 @@ class ContactForm extends React.Component {
               <button
                 type="button"
                 onClick={this.handleSubmit.bind(this)}
-                className="px-6 py-3 text-white rounded bg-primary"
+                className="px-6 py-3 text-lg text-white rounded bg-primary"
               >
                 Send Message
               </button>

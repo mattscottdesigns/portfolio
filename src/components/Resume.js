@@ -14,7 +14,7 @@ const Resume = () => {
       <Heading text="Resume" />
       <div className="my-16 text-center">
         <a
-          className="px-6 py-3 text-white rounded bg-primary"
+          className="px-6 py-3 text-lg text-white rounded bg-primary"
           href={resumePDF}
           download
         >
