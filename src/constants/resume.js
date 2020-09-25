@@ -1,6 +1,6 @@
 export const resume = [
   {
-    title: "Senior UI/UX Developer",
+    title: "Senior UI/UX Designer",
     company: "Convention Data Services",
     date: "November 2019 — Present",
     description:
@@ -14,7 +14,7 @@ export const resume = [
       "Ensured that all designs created follow the company branding guidelines. Used Adobe Creative Suite to create landing pages, digital catalogs, emails, and advertisements. Collaborated with the photography team to coordinate product shoots and provide direction for upcoming marketing campaigns.",
   },
   {
-    title: "UI/UX Developer",
+    title: "UI/UX Designer",
     company: "Convention Data Services",
     date: "July 2017 — July 2019",
     description:

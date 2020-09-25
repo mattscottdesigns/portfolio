@@ -9,13 +9,13 @@ const About = () => {
     >
       <div className="mx-auto">
         <img
-          className="mx-auto mb-6 rounded-full shadow-xl img-picture"
+          className="mx-auto mb-6 border-4 border-white border-opacity-25 rounded-full img-picture"
           src={picture}
           alt="Matthew Scott"
         />
         <div className="opacity-75">
           <div className="text-4xl font-bold tracking-wide">Matthew Scott</div>
-          <div className="mb-6 -mt-1 text-2xl font-thin">UI/UX Developer</div>
+          <div className="mb-6 -mt-1 text-2xl font-thin">UI/UX Designer</div>
           <div className="max-w-xs text-xl font-thin">
             My name is{" "}
             <span className="font-medium text-primary">Matt Scott</span> and I

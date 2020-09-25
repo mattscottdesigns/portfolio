@@ -9,8 +9,8 @@ const Skills = () => {
       <Heading text="Skills" />
       <div className="max-w-5xl px-10 py-16 mx-auto">
         <div className="font-light leading-7 text-md text-dark">
-          Throughout my life I have always been drawn to making things look
-          good. At first it started off with just designing some logos and
+          I have always been interested in creating things that are visually
+          appealing. At first it started off with just designing some logos and
           websites for friends. Naturally I got curious about the development
           side of things and starting learning technologies such as HTML/CSS,
           JavaScript, and server side languages like PHP to create interactive
