@@ -11,7 +11,7 @@ import brahminSupportRepairs from "./../images/projects/brahmin-support-repairs.
 import brahminSupportGiftServices from "./../images/projects/brahmin-support-gift-services.png"
 import brahminSupportCare from "./../images/projects/brahmin-support-care.png"
 import brahminLandingPage from "./../images/projects/brahmin-landing-page.png"
-import brahminLandingTopsail from "./../images/projects/brahmin-landing-topsail.png"
+import brahminLandingTopsail from "./../images/projects/brahmin-landing-topsail.jpg"
 import cdsDensityManagement from "./../images/projects/cds-density-management.png"
 import cdsDensityManagementFull from "./../images/projects/cds-density-management-full.png"
 import cdsShowPro from "./../images/projects/cds-showpro.png"
