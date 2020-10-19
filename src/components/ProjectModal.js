@@ -8,7 +8,7 @@ class ProjectModal extends React.Component {
   componentDidMount() {}
 
   render() {
-    const { selectedProjectIndex } = this.props
+    const { selectedProjectIndex, projects, onClose } = this.props
 
     const settings = {
       arrows: false,
@@ -49,7 +49,7 @@ class ProjectModal extends React.Component {
           <FaChevronCircleRight />
         </div>
         <Slider {...settings} ref={ref => (this.slider = ref)}>
-          {this.props.projects.map((project, index) => {
+          {projects.map((project, index) => {
             return (
               <div
                 className="h-screen py-4 duration-300 ease-in-out md:px-16 md:py-10 transition-height"
@@ -59,7 +59,7 @@ class ProjectModal extends React.Component {
                   <div className="px-5 py-4 border-b bg-light">
                     <div
                       className="absolute top-0 right-0 p-6 text-xl"
-                      onClick={this.props.onClose}
+                      onClick={onClose}
                     >
                       <GrClose />
                     </div>
