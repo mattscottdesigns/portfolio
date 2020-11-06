@@ -1,5 +1,7 @@
 import React from "react"
 import picture from "./../images/picture.png"
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa"
+import { FaEnvelopeSquare } from "react-icons/fa"
 
 const About = () => {
   return (
@@ -16,10 +18,10 @@ const About = () => {
         <div className="opacity-75">
           <div className="text-4xl font-bold tracking-wide">Matthew Scott</div>
           <div className="mb-6 -mt-1 text-2xl font-thin">UI/UX Designer</div>
-          <div className="max-w-xs text-xl font-thin">
+          <div className="max-w-md text-xl font-thin">
             My name is{" "}
             <span className="font-medium text-primary">Matt Scott</span> and I
-            create minimal and user friendly designs.
+            am passionate about create minimal and user friendly designs.
           </div>
         </div>
       </div>

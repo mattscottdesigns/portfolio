@@ -32,11 +32,11 @@ export const design = [
     percent: "95",
   },
   {
-    text: "UI Design",
+    text: "User Interfaces",
     percent: "85",
   },
   {
-    text: "UX Design",
+    text: "Interaction Design",
     percent: "85",
   },
 
@@ -50,7 +50,7 @@ export const design = [
   },
   {
     text: "Research",
-    percent: "75",
+    percent: "80",
   },
 ]
 
