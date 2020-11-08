@@ -1,4 +1,4 @@
-import React from "React"
+import React from "react"
 import SimpleReactValidator from "simple-react-validator"
 
 class ContactForm extends React.Component {
