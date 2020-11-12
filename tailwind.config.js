@@ -29,6 +29,9 @@ module.exports = {
       transitionProperty: {
         height: "height",
       },
+      inset: {
+        full: "100%",
+      },
     },
   },
   variants: {},

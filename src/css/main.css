@@ -68,14 +68,15 @@
 .project-next {
   @apply hidden;
 }
-
+/*
 @screen md {
   .project-previous,
   .project-next {
     top: 50%;
-    @apply block p-1 rounded-full text-white fixed text-3xl m-2 opacity-75 transition ease-in-out duration-300 cursor-pointer z-30;
+    padding: 0.15rem;
+    @apply block bg-dark rounded-full text-white fixed text-3xl m-2 opacity-75 transition ease-in-out duration-300 cursor-pointer z-30;
   }
-}
+}*/
 
 .project-previous:hover,
 .project-next:hover {
