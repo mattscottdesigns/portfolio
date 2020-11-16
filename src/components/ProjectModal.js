@@ -1,4 +1,5 @@
 import React from "react"
+import Tag from "./Tag"
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import { GrClose } from "react-icons/gr"
@@ -68,15 +69,8 @@ class ProjectModal extends React.Component {
                       {project.description}
                     </div>
                     <div>
-                      {project.tags.map(tag => {
-                        return (
-                          <span
-                            key={tag}
-                            className="inline-block px-4 py-1 mb-2 mr-2 text-xs rounded md:text-sm bg-light"
-                          >
-                            {tag}
-                          </span>
-                        )
+                      {project.tags.map((tag, index) => {
+                        return <Tag key={index} text={tag} />
                       })}
                     </div>
                     <div className="flex flex-wrap justify-center">
