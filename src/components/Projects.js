@@ -69,7 +69,7 @@ class Projects extends React.Component {
     return (
       <div id="projects" className="bg-dark">
         <Heading text="Projects" />
-        <div className="mx-4 text-center">
+        <div className="hidden mx-4 text-center">
           <div className="flex max-w-md p-1 mx-auto mt-16 mb-10 font-light text-center text-white bg-black bg-opacity-25 rounded-lg">
             <div
               className="w-1/3 p-2 m-2 transition duration-200 ease-in-out rounded cursor-pointer"
@@ -94,7 +94,7 @@ class Projects extends React.Component {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap px-4 pb-16 mx-auto">
+        <div className="flex flex-wrap px-4 py-16 mx-auto">
           {projects.map(project => {
             return (
               <div

@@ -18,7 +18,7 @@ const Resume = () => {
           href={resumePDF}
           download
         >
-          View Full Resume
+          Download Resume
         </a>
       </div>
       <div className="pr-5 mx-auto my-16 md:pr-10 md:pl-10">
