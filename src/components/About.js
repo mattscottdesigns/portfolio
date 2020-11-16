@@ -1,12 +1,20 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import picture from "./../images/picture.png"
 
 const About = () => {
+  const [height, setHeight] = useState("100vh")
+
+  useEffect(() => {
+    if (typeof window !== undefined) {
+      setHeight(window.innerHeight)
+    }
+  })
+
   return (
     <div
       id="about"
-      className="flex items-center p-10 text-center text-white transition-all duration-300 ease-in-out bg-fixed bg-center bg-cover md:text-left bg-about bg-dark"
-      style={{ height: window.innerHeight }}
+      className="flex items-center px-12 py-10 text-center text-white transition-all duration-300 ease-in-out bg-fixed bg-center bg-cover md:text-left bg-about bg-dark"
+      style={{ height: height }}
     >
       <div className="flex flex-wrap items-center max-w-md mx-auto md:max-w-4xl">
         <div className="w-full md:w-1/3">
@@ -21,10 +29,10 @@ const About = () => {
             <div className="text-4xl font-bold tracking-wide">
               Matthew Scott
             </div>
-            <div className="mb-4 -mt-2 text-2xl font-thin text-primary">
+            <div className="mb-4 -mt-1 text-2xl text-primary">
               UI/UX Designer
             </div>
-            <div className="mb-4 text-xl font-thin md:text-2xl">
+            <div className="mb-4 text-xl font-thin leading-9">
               My name is Matt and I am designer & developer from Dartmouth
               Massachusetts who is passionate about creating minimal and user
               friendly designs.
