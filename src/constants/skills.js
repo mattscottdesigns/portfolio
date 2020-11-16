@@ -1,6 +1,6 @@
 export const development = [
   {
-    text: "JavaScript / ES6",
+    text: "JavaScript",
     percent: "90",
   },
   {
@@ -98,6 +98,15 @@ export const skills = [
     backgroundClass: "bg-dark",
     items: software,
   },
+]
+
+export const services = [
+  "Logo Design",
+  "User Interfaces",
+  "Heuristic Review",
+  "Landing Pages",
+  "Dashboards",
+  "Interactive Prototypes",
 ]
 
 export default skills

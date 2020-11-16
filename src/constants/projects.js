@@ -179,7 +179,7 @@ export const projects = [
     id: "powerbiHeatmap",
     company: "Convention Data Services",
     display: "Power BI Exhibitor Booth Heatmap",
-    tags: ["JavaScript / ES6", "HTML", "CSS"],
+    tags: ["JavaScript", "HTML", "CSS"],
     thumbnail: images.powerbiHeatmap.thumbnail,
     images: images.powerbiHeatmap.projectImages,
     type: ["development"],
@@ -192,7 +192,7 @@ export const projects = [
     display: "Digital Backpack Mobile App",
     tags: [
       "React Native",
-      "JavaScript / ES6",
+      "JavaScript",
       "HTML",
       "CSS",
       "Illustrator",

@@ -4,7 +4,7 @@ export const resume = [
     company: "Convention Data Services",
     date: "November 2019 — Present",
     description:
-      "Responsible for standardizing the look and feel across products while continuously improving the UI/UX. Developed products using multiple languages like JavaScript (ES6 / React / React Native), .NET, and PHP. Managed a committee that was in charge of evaluating and improving the next product on our company roadmap.",
+      "Responsible for standardizing the look and feel across products while continuously improving the UI/UX. Developed products using multiple languages like JavaScript (React / React Native), .NET, and PHP. Managed a committee that was in charge of evaluating and improving the next product on our company roadmap.",
   },
   {
     title: "Senior Web Graphic Designer",
