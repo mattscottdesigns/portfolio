@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex items-center px-12 py-10 text-center text-white transition-all duration-300 ease-in-out bg-fixed bg-center bg-cover md:text-left bg-about bg-dark"
+      className="flex items-center px-10 py-10 text-center text-white transition-all duration-300 ease-in-out bg-fixed bg-center bg-cover md:text-left bg-about bg-dark"
       style={{ height: height }}
     >
       <div className="flex flex-wrap items-center max-w-md mx-auto md:max-w-4xl">
@@ -25,11 +25,11 @@ const About = () => {
           />
         </div>
         <div className="w-full md:w-2/3">
-          <div className="opacity-75 md:pl-12">
+          <div className="opacity-75 md:pl-6">
             <div className="text-4xl font-bold tracking-wide">
               Matthew Scott
             </div>
-            <div className="mb-4 -mt-1 text-2xl text-primary">
+            <div className="mb-4 -mt-1 text-2xl font-thin text-primary">
               UI/UX Designer
             </div>
             <div className="mb-4 text-xl font-thin leading-9">
