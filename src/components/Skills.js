@@ -13,12 +13,13 @@ const Skills = () => {
           During my career I have had the opportunity to work with a variety of
           products & departments. My main area of expertise is designing user
           interfaces for both mobile and web applications which I have designed
-          by creating wireframes, interactive prototypes, and performing
-          heuristic evaluations. I also have experience working with marketing
-          materials such as logos, powerpoints, and infographics. In addition to
-          designing I am also a skilled frontend developer capable of using
-          HTML, CSS, and JavaScript to implement the designs that I have created
-          and working with other languages such as .NET and PHP.
+          by performing user research, creating wireframes, interactive
+          prototypes, and performing heuristic evaluations. I also have
+          experience working with marketing materials such as logos,
+          powerpoints, and infographics. In addition to designing I am also a
+          skilled frontend developer capable of using HTML, CSS, and JavaScript
+          to implement the designs that I have created and working with other
+          languages such as .NET and PHP.
         </div>
 
         <div className="mb-10">
