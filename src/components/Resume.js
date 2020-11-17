@@ -10,7 +10,7 @@ import "react-vertical-timeline-component/style.min.css"
 
 const Resume = () => {
   return (
-    <div id="resume">
+    <div id="resume" className="overflow-x-hidden">
       <Heading text="Resume" />
       <div className="my-16 text-center">
         <a
