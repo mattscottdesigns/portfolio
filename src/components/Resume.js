@@ -33,7 +33,16 @@ const Resume = () => {
               >
                 <div className="text-xl font-bold">{item.title}</div>
                 <div className="mb-5 text-primary">{item.company}</div>
-                <div>{item.description}</div>
+                <ul className="ml-4 text-sm font-thin list-disc">
+                  {item.accomplishments &&
+                    item.accomplishments.map((accomplishment, index) => {
+                      return (
+                        <li key={index} className="pl-1 mb-2">
+                          {accomplishment}
+                        </li>
+                      )
+                    })}
+                </ul>
               </VerticalTimelineElement>
             )
           })}
