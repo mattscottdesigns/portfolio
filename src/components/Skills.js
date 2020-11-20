@@ -1,8 +1,7 @@
 import React from "react"
 import Heading from "./Heading"
-import Tag from "./Tag"
 import SkillsBar from "./SkillsBar"
-import { skills, services } from "./../constants/skills"
+import { skills } from "./../constants/skills"
 
 const Skills = () => {
   return (

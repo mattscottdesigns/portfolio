@@ -13,7 +13,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex items-center px-10 py-10 text-center text-white transition-all duration-300 ease-in-out bg-fixed bg-center bg-cover md:text-left bg-about bg-dark"
+      className="flex items-center px-10 py-10 text-center text-white transition-all duration-300 ease-in-out bg-center bg-cover md:text-left bg-about bg-dark"
       style={{ height: height }}
     >
       <div className="flex flex-wrap items-center max-w-md mx-auto md:max-w-4xl">
