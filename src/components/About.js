@@ -8,7 +8,7 @@ const About = () => {
     if (typeof window !== undefined) {
       setHeight(window.innerHeight)
     }
-  })
+  }, [])
 
   return (
     <div
