@@ -33,7 +33,7 @@ const Resume = () => {
               >
                 <div className="text-xl font-bold">{item.title}</div>
                 <div className="mb-5 text-primary">{item.company}</div>
-                <ul className="ml-4 text-sm font-thin list-disc">
+                <ul className="ml-4 font-thin list-disc">
                   {item.accomplishments &&
                     item.accomplishments.map((accomplishment, index) => {
                       return (
