@@ -120,3 +120,7 @@
 .slick-next:before {
   font-size: 30px;
 }
+
+.slide-pane__content {
+  @apply p-0;
+}
