@@ -124,3 +124,7 @@
 .slide-pane__content {
   @apply p-0;
 }
+
+.slide-pane.slide-pane_from_right {
+  width: 90% !important;
+}

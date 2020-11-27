@@ -22,7 +22,7 @@ const ProjectModal = props => {
 
   return (
     <SlidingPane
-      className="min-w-full text-white bg-white md:min-w-0"
+      className="max-w-4xl text-white duration-200 bg-white rounded-l-xl"
       overlayClassName="z-30"
       from={"right"}
       hideHeader={true}
@@ -59,15 +59,15 @@ const ProjectModal = props => {
                   <div className="mb-5 text-sm font-light md:text-base text-dark">
                     {project.description}
                   </div>
-                  <div>
+                  <div className="mb-5">
                     {project.tags.map((tag, index) => {
                       return <Tag key={index} text={tag} />
                     })}
                   </div>
-                  <div className="flex flex-wrap justify-center max-w-4xl px-5 mx-auto">
+                  <div className="flex flex-wrap justify-center max-w-4xl mx-auto">
                     {project.images.map((image, index) => {
                       return (
-                        <div key={index} className="pt-5 pb-5">
+                        <div key={index} className="pb-10">
                           <img
                             className="border rounded-lg shadow-lg"
                             src={image}
