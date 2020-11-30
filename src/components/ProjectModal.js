@@ -22,8 +22,8 @@ const ProjectModal = props => {
 
   return (
     <SlidingPane
-      className="max-w-4xl text-white duration-200 bg-white rounded-l-xl"
-      overlayClassName="z-30"
+      className="max-w-4xl text-white duration-300 bg-white"
+      overlayClassName="z-30 duration-300"
       from={"right"}
       hideHeader={true}
       isOpen={visible ? true : false}
@@ -32,10 +32,7 @@ const ProjectModal = props => {
       <Slider {...settings} ref={sliderRef}>
         {projects.map((project, index) => {
           return (
-            <div
-              className="h-screen duration-300 ease-in-out transition-height"
-              key={index}
-            >
+            <div className="h-screen" key={index}>
               <div className="relative flex flex-col h-full max-h-full overflow-auto duration-300 ease-in-out bg-white rounded-lg transition-height">
                 <div className="px-5 py-4 border-b">
                   <div
@@ -64,7 +61,7 @@ const ProjectModal = props => {
                       return <Tag key={index} text={tag} />
                     })}
                   </div>
-                  <div className="flex flex-wrap justify-center max-w-4xl mx-auto">
+                  <div className="flex flex-wrap justify-center max-w-4xl px-4 mx-auto">
                     {project.images.map((image, index) => {
                       return (
                         <div key={index} className="pb-10">

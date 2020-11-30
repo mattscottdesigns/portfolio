@@ -65,7 +65,7 @@ const Navigation = props => {
         </div>
       </div>
       <SlidingPane
-        className="max-w-xs p-5 text-white duration-200 bg-dark rounded-l-xl"
+        className="max-w-xs p-5 text-white duration-300 bg-dark"
         overlayClassName="z-30"
         hideHeader={true}
         isOpen={showSidebar}

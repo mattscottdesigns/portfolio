@@ -126,5 +126,11 @@
 }
 
 .slide-pane.slide-pane_from_right {
-  width: 90% !important;
+  width: 100% !important;
+}
+
+@screen sm {
+  .slide-pane.slide-pane_from_right {
+    width: 90% !important;
+  }
 }
