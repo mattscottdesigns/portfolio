@@ -35,7 +35,7 @@ export const resume = [
     accomplishments: [
       "Worked with product stakeholders, users, and developers to research pain points and areas of opportunity in our products.",
       "Used wireframes and Adobe XD to put the designs together and then HTML/CSS and JavaScript to make interactive prototypes",
-      "Designed a self service event mangement application that allows event organizers to create and manage their own events",
+      "Designed a self service event management application that allows event organizers to create and manage their own events",
       "Designed a portal that allowed for our clients to sign in and then seamlessly switch between our suite of products",
     ],
   },
