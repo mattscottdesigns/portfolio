@@ -4,7 +4,11 @@ module.exports = {
   future: {
     removeDeprecatedGapUtilities: true,
   },
-  purge: [],
+  purge: {
+    enabled: true,
+    layers: ["components", "utilities"],
+    content: ["./src/**/*.js"],
+  },
   theme: {
     fontFamily: {
       sans: ["Roboto", "Arial", "sans-serif"],
