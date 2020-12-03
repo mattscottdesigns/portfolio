@@ -27,6 +27,7 @@ import powerbiHeatmapZoomed from "./../images/projects/powerbi-heatmap-zoomed.pn
 import powerbiHeatmapModal from "./../images/projects/powerbi-heatmap-modal.png"
 import cdsDigitalBackpack from "./../images/projects/digital-backpack.png"
 import cdsDigitalBackpackLogo from "./../images/projects/digital-backpack-logo.png"
+import cdsDigitalBackpackDemo from "./../images/projects/digital-backpack-demo.jpg"
 import cdsPrimed from "./../images/projects/cds-primed.png"
 import cdsPrimedFull from "./../images/projects/cds-primed-full.png"
 import cdsHub from "./../images/projects/cds-hub.png"
@@ -81,7 +82,7 @@ export const images = {
   },
   cdsDigitalBackpack: {
     thumbnail: cdsDigitalBackpack,
-    projectImages: [cdsDigitalBackpackLogo],
+    projectImages: [cdsDigitalBackpackLogo, cdsDigitalBackpackDemo],
   },
   cdsPrimed: {
     thumbnail: cdsPrimed,
