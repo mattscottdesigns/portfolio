@@ -6,7 +6,13 @@ const About = () => {
 
   useEffect(() => {
     if (typeof window !== undefined) {
-      setHeight(window.innerHeight)
+      function handleListener() {
+        setHeight(window.innerHeight)
+      }
+
+      window.addEventListener("resize", handleListener)
+
+      return () => window.removeEventListener("resize", handleListener)
     }
   }, [])
 
@@ -25,14 +31,14 @@ const About = () => {
           />
         </div>
         <div className="w-full md:w-2/3">
-          <div className="opacity-75 md:pl-6">
+          <div className="opacity-90 md:pl-6">
             <div className="text-4xl font-bold tracking-wide">
               Matthew Scott
             </div>
             <div className="mb-4 -mt-1 text-2xl font-thin text-primary">
               UI/UX Designer
             </div>
-            <div className="mb-4 text-xl font-thin leading-9">
+            <div className="mb-4 text-xl font-thin leading-8">
               My name is Matt and I am designer & developer from Dartmouth
               Massachusetts who is passionate about creating minimal and user
               friendly designs.
