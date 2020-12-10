@@ -6,13 +6,7 @@ const About = () => {
 
   useEffect(() => {
     if (typeof window !== undefined) {
-      function handleListener() {
-        setHeight(window.innerHeight)
-      }
-
-      window.addEventListener("resize", handleListener)
-
-      return () => window.removeEventListener("resize", handleListener)
+      setHeight(window.innerHeight)
     }
   }, [])
 
