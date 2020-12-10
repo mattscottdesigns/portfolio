@@ -5,7 +5,6 @@ module.exports = {
     removeDeprecatedGapUtilities: true,
   },
   purge: {
-    enabled: true,
     layers: ["components", "utilities"],
     content: ["./src/**/*.js"],
   },
