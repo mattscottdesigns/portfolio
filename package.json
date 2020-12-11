@@ -25,6 +25,7 @@
         "react-helmet": "^6.1.0",
         "react-hook-form": "^6.11.5",
         "react-icons": "^3.11.0",
+        "react-magnifier": "^3.0.4",
         "react-scrollspy": "^3.4.3",
         "react-slick": "^0.27.13",
         "react-sliding-pane": "^6.1.2",
