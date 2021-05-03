@@ -25,17 +25,33 @@ const About = () => {
           />
         </div>
         <div className="w-full md:w-2/3">
-          <div className="opacity-90 md:pl-6">
+          <div className="md:pl-6">
             <div className="text-4xl font-bold tracking-wide">
               Matthew Scott
             </div>
-            <div className="mb-4 -mt-1 text-2xl font-thin text-primary">
+            <div className="mb-4 -mt-1 text-2xl text-primary">
               UI/UX Designer
             </div>
-            <div className="mb-4 text-xl font-thin leading-8">
+            <div className="mb-10 text-xl font-thin leading-8">
               My name is Matt and I am designer & developer from Dartmouth
               Massachusetts who is passionate about creating minimal and user
               friendly designs.
+            </div>
+            <div>
+              <a
+                target="_blank"
+                href="https://github.com/mattscottdesigns"
+                className="px-6 py-3 mr-2 text-lg text-white transition duration-300 bg-transparent border border-white rounded hover:bg-white hover:text-dark"
+              >
+                Github
+              </a>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/matthew-taylor-scott/"
+                className="px-6 py-3 ml-2 text-lg text-white transition duration-300 bg-transparent border border-white rounded hover:bg-white hover:text-dark"
+              >
+                Linkedin
+              </a>
             </div>
           </div>
         </div>

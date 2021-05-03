@@ -35,12 +35,18 @@ const ProjectModal = props => {
             <div className="h-screen" key={index}>
               <div className="relative flex flex-col h-full max-h-full overflow-auto duration-300 ease-in-out bg-white rounded-lg transition-height">
                 <div className="px-5 py-4 border-b">
-                  <div
-                    className="absolute top-0 right-0 p-6 text-xl"
+                  <a
+                    tabIndex={0}
+                    className="absolute top-0 right-0 p-6 text-xl focus:outline-black"
                     onClick={onClose}
+                    onKeyPress={event => {
+                      if (event.key === "Enter") {
+                        onClose()
+                      }
+                    }}
                   >
                     <GrClose />
-                  </div>
+                  </a>
 
                   <div className="pr-10">
                     <div className="mb-1 text-xl font-medium text-dark">

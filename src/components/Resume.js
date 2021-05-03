@@ -31,13 +31,15 @@ const Resume = () => {
                 dateClassName="text-xl"
                 className="text-dark"
               >
-                <div className="text-xl font-bold">{item.title}</div>
-                <div className="mb-5 text-primary">{item.company}</div>
+                <div className="text-xl font-medium">{item.title}</div>
+                <div className="mb-5 text-xl font-thin text-dark">
+                  {item.company}
+                </div>
                 <ul className="ml-4 font-light list-disc text-md">
                   {item.accomplishments &&
                     item.accomplishments.map((accomplishment, index) => {
                       return (
-                        <li key={index} className="pl-1 mb-2">
+                        <li key={index} className="pl-1 mb-3">
                           {accomplishment}
                         </li>
                       )

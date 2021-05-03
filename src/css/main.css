@@ -4,6 +4,14 @@
 
 @import "tailwindcss/utilities";
 
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  @apply outline-white;
+}
+
 .navigation-link {
   @apply px-4 py-1 mx-2 uppercase transition duration-500 ease-in-out rounded;
 }

@@ -55,13 +55,12 @@ export const design = [
 
 export const software = [
   {
-    text: "Photoshop",
+    text: "XD",
     percent: "90",
   },
-
   {
-    text: "XD",
-    percent: "85",
+    text: "Photoshop",
+    percent: "90",
   },
   {
     text: "Visual Studio",

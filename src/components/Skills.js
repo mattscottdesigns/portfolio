@@ -10,15 +10,11 @@ const Skills = () => {
       <div className="max-w-5xl px-10 py-16 mx-auto">
         <div className="mb-4 font-light leading-7 text-md text-dark">
           During my career I have had the opportunity to work with a variety of
-          products & departments. My main area of expertise is designing user
-          interfaces for both mobile and web applications which I have designed
-          by performing user research, creating wireframes, interactive
-          prototypes, and performing heuristic evaluations. I also have
-          experience working with marketing materials such as logos,
-          powerpoints, and infographics. In addition to designing I am also a
-          skilled frontend developer capable of using HTML, CSS, and JavaScript
-          to implement the designs that I have created and working with other
-          languages such as .NET and PHP.
+          products & departments including: marketing, product development, and
+          analytics. My main area of expertise is designing and developing user
+          interfaces for mobile and web applications. Most of the applications I
+          have developed are in JavaScript but I also have experience working
+          with other languages like .NET and PHP.
         </div>
 
         <div className="mb-10">
