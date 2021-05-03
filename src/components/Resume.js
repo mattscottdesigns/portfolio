@@ -1,7 +1,7 @@
 import React from "react"
 import Heading from "./Heading"
 import resume from "./../constants/resume"
-import resumePDF from "./../images/resume-mattscott.pdf"
+import resumePDF from "./../images/Resume-MatthewScott.pdf"
 import {
   VerticalTimeline,
   VerticalTimelineElement,
